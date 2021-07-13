@@ -1,0 +1,110 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
+    <meta name="author" content="Crolweb" />
+    <meta name="description" content="Frontend Mentor | Tip calculator app" />
+    <link rel="shortcut icon" href="./images/favicon.ico" type="image/x-icon" />
+
+    <link rel="stylesheet" href="styles.css" />
+
+    <title>Frontend Mentor | Tip calculator app</title>
+  </head>
+  <body>
+    <h1>Spli<br>tter</h1>
+
+    <main>
+      <form action="" class="bill__form">
+        <div class="bill__form__input">
+          <h2>Bill</h2>
+          <div class="input__bill">
+            <input
+              type="number"
+              name="bill"
+              id="bill"
+              placeholder="0"
+              class="input__number"
+              
+              step="0.01"
+            />
+            <img src="./images/icon-dollar.svg" alt="" />
+          </div>
+        </div>
+        <div class="bill__form__input bill__form__tip">
+          <h2>Selct Tip %</h2>
+          <input type="radio" name="tip" id="tip5" value="0.05" />
+          <label for="tip5" class="radio__label">5%</label>
+          <input type="radio" name="tip" id="tip10" value="0.10"/>
+          <label for="tip10" class="radio__label">10%</label>
+          <input type="radio" name="tip" id="tip15" value="0.15" />
+          <label for="tip15" class="radio__label">15%</label>
+          <input type="radio" name="tip" id="tip25" value="0.25" />
+          <label for="tip25" class="radio__label">25%</label>
+          <input type="radio" name="tip" id="tip50" value="0.50" />
+          <label for="tip50" class="radio__label">50%</label>
+          <input
+            type="number"
+            name="tip"
+            id="tip50"
+            class="radio__label custom"
+            placeholder="Custom"
+          />
+        </div>
+        <div class="bill__form__input">
+          <h2>Number Of People</h2>
+          <div class="input__bill">
+            <input
+              type="number"
+              name="people"
+              id="people"
+              placeholder="0"
+              class="input__number"
+              min="1"
+            />
+            <img src="./images/icon-person.svg" alt="" />
+          </div>
+        </div>
+      </form>
+      <div class="amount">
+        <div class="amount__titles">
+          <div>
+            <div class="amount__title">
+              <p>Tip Amount</p>
+              <p>/ person</p>
+            </div>
+            <p class="amount__sum" id="tip">$0.00</p>
+          </div>
+          <div>
+            <div class="amount__title">
+              <p>Total</p>
+              <p>/ person</p>
+            </div>
+            <p class="amount__sum" id="total">$0.00</p>
+          </div>
+        </div>
+        <button class="btn" id="resetBtn">RESET</button>
+      </div>
+    </main>
+
+    <div class="attribution">
+      Challenge by
+      <a href="https://www.frontendmentor.io?ref=challenge" target="_blank"
+        >Frontend Mentor</a
+      >. Coded by <a href="#">Crolweb</a>.
+    </div>
+
+    <footer>
+      <a
+        href="http://github.com/crolette"
+        target="_blank"
+        rel="noopener noreferrer"
+        ><img src="./images/crolweb-logo.png" alt=""
+      /></a>
+    </footer>
+
+    <script src="app.js"></script>
+  </body>
+</html>
